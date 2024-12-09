@@ -20,27 +20,43 @@ topology:
     dc1-spine1:
       kind: ceos
       mgmt-ipv4: 172.100.100.11
+      ports:
+        - 64001:22
     dc1-spine2:
       kind: ceos
       mgmt-ipv4: 172.100.100.12
+      ports:
+        - 64002:22
     dc1-border-leaf1:
       kind: ceos
       mgmt-ipv4: 172.100.100.13
+      ports:
+        - 64003:22
     dc1-border-leaf2:
       kind: ceos
       mgmt-ipv4: 172.100.100.14
+      ports:
+        - 64004:22
     dc1-leaf1a:
       kind: ceos
       mgmt-ipv4: 172.100.100.101
+      ports:
+        - 64005:22
     dc1-leaf1b:
       kind: ceos
       mgmt-ipv4: 172.100.100.102
+      ports:
+        - 64006:22
     dc1-leaf2a:
       kind: ceos
       mgmt-ipv4: 172.100.100.103
+      ports:
+        - 64007:22
     dc1-leaf2b:
       kind: ceos
       mgmt-ipv4: 172.100.100.104
+      ports:
+        - 64008:22
     dc1-client1:
       kind: linux
       mgmt-ipv4: 172.100.100.111
@@ -64,21 +80,33 @@ topology:
     dc2-spine1:
       kind: ceos
       mgmt-ipv4: 172.100.100.21
+      ports:
+        - 64100:22
     dc2-spine2:
       kind: ceos
       mgmt-ipv4: 172.100.100.22
+      ports:
+        - 64101:22
     dc2-border-leaf1:
       kind: ceos
       mgmt-ipv4: 172.100.100.23
+      ports:
+        - 64102:22
     dc2-border-leaf2:
       kind: ceos
       mgmt-ipv4: 172.100.100.24
+      ports:
+        - 64103:22
     dc2-leaf1a:
       kind: ceos
       mgmt-ipv4: 172.100.100.121
+      ports:
+        - 64104:22
     dc2-leaf1b:
       kind: ceos
       mgmt-ipv4: 172.100.100.122
+      ports:
+        - 64105:22
     dc2-leaf2a:
       kind: ceos
       mgmt-ipv4: 172.100.100.123

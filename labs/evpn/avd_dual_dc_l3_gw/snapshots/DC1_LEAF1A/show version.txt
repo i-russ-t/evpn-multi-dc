@@ -13,6 +13,6 @@ Image optimization: None
 
 Kernel version: 5.15.0-125-generic
 
-Uptime: 7 minutes
+Uptime: 3 minutes
 Total memory: 65425696 kB
-Free memory: 48166248 kB
+Free memory: 47971216 kB

@@ -1,8 +1,8 @@
-Last table change time   : 0:00:54 ago
-Number of table inserts  : 24
-Number of table deletes  : 2
+Last table change time   : 0:01:40 ago
+Number of table inserts  : 22
+Number of table deletes  : 0
 Number of table drops    : 0
-Number of table age-outs : 2
+Number of table age-outs : 0
 
 Port          Neighbor Device ID       Neighbor Port ID    TTL
 ---------- ------------------------ ---------------------- ---
@@ -10,21 +10,21 @@ Et1           dc2-spine1               Ethernet1           120
 Et2           dc2-spine2               Ethernet1           120
 Et3           dc2-leaf1b               Ethernet3           120
 Et4           dc2-leaf1b               Ethernet4           120
-Et5           dc2-client1              aac1.abd6.5fab      120
-Et6           dc2-client2              aac1.ab2f.bf5d      120
-Ma0           dc1-spine2               Management0         120
-Ma0           dc2-client1              0242.ac64.6483      120
-Ma0           dc1-spine1               Management0         120
-Ma0           wan                      Management0         120
-Ma0           dc2-border-leaf2         Management0         120
-Ma0           dc2-spine1               Management0         120
+Et5           dc2-client1              aac1.abb8.3801      120
+Et6           dc2-client2              aac1.ab86.8ad2      120
+Ma0           dc1-client3              0242.ac64.6471      120
+Ma0           dc2-client3              0242.ac64.6485      120
+Ma0           dc1-client4              0242.ac64.6472      120
 Ma0           dc1-client2              0242.ac64.6470      120
 Ma0           dc1-client1              0242.ac64.646f      120
 Ma0           dc2-client2              0242.ac64.6484      120
-Ma0           dc2-client3              0242.ac64.6485      120
+Ma0           dc2-client1              0242.ac64.6483      120
 Ma0           dc2-client4              0242.ac64.6486      120
-Ma0           dc1-leaf1b               Management0         120
+Ma0           dc2-border-leaf1         Management0         120
 Ma0           dc2-leaf2a               Management0         120
-Ma0           dc1-leaf1a               Management0         120
-Ma0           dc1-client3              0242.ac64.6471      120
+Ma0           001c.7399.c093           Management0         120
+Ma0           dc1-border-leaf1         Management0         120
+Ma0           dc2-border-leaf2         Management0         120
 Ma0           dc1-leaf2a               Management0         120
+Ma0           dc1-border-leaf2         Management0         120
+Ma0           wan                      Management0         120

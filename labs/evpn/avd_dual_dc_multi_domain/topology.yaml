@@ -15,6 +15,8 @@ topology:
     wan:
       kind: ceos
       mgmt-ipv4: 172.100.100.30
+      ports:
+        - 65400:22
     dc1-spine1:
       kind: ceos
       mgmt-ipv4: 172.100.100.11

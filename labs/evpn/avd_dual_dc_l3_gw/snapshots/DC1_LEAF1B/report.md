@@ -30,11 +30,11 @@ Management0     172.100.100.102/24     up         up             1500
 ## show lldp neighbors
 
 ```
-Last table change time   : 0:00:29 ago
-Number of table inserts  : 35
-Number of table deletes  : 13
+Last table change time   : 0:00:17 ago
+Number of table inserts  : 21
+Number of table deletes  : 0
 Number of table drops    : 0
-Number of table age-outs : 13
+Number of table age-outs : 0
 
 Port          Neighbor Device ID       Neighbor Port ID    TTL
 ---------- ------------------------ ---------------------- ---
@@ -42,24 +42,23 @@ Et1           dc1-spine1               Ethernet2           120
 Et2           dc1-spine2               Ethernet2           120
 Et3           dc1-leaf1a               Ethernet3           120
 Et4           dc1-leaf1a               Ethernet4           120
-Et5           dc1-client1              aac1.abae.7eef      120
-Et6           dc1-client2              aac1.ab6d.5ffb      120
-Ma0           dc2-client1              0242.ac64.6483      120
+Et5           dc1-client1              aac1.ab8d.4393      120
+Et6           dc1-client2              aac1.abc6.e3a0      120
 Ma0           dc2-client2              0242.ac64.6484      120
-Ma0           dc1-client2              0242.ac64.6470      120
 Ma0           dc2-client3              0242.ac64.6485      120
-Ma0           dc2-client4              0242.ac64.6486      120
-Ma0           dc1-client1              0242.ac64.646f      120
-Ma0           dc2-leaf1b               Management0         120
-Ma0           dc1-border-leaf2         Management0         120
-Ma0           dc1-leaf1a               Management0         120
 Ma0           dc1-client3              0242.ac64.6471      120
 Ma0           dc1-client4              0242.ac64.6472      120
+Ma0           dc1-client1              0242.ac64.646f      120
+Ma0           dc1-client2              0242.ac64.6470      120
+Ma0           dc2-client1              0242.ac64.6483      120
+Ma0           dc2-client4              0242.ac64.6486      120
+Ma0           dc1-border-leaf2         Management0         120
 Ma0           dc1-leaf2a               Management0         120
-Ma0           dc2-leaf2b               Management0         120
 Ma0           wan                      Management0         120
 Ma0           dc2-leaf2a               Management0         120
-Ma0           dc1-spine1               Management0         120
+Ma0           dc1-border-leaf1         Management0         120
+Ma0           dc1-spine2               Management0         120
+Ma0           dc2-leaf2b               Management0         120
 ```
 ## show running-config
 
@@ -69,7 +68,7 @@ Ma0           dc1-spine1               Management0         120
 !
 no aaa root
 !
-username admin privilege 15 role network-admin secret sha512 $6$plQrCfLEQ6eB/8j/$/hPQfl9PcU1uem6MSH3hBaF0jWGAJ7cfR6ixAeovNja2lR1lK.1NAdicRhr7QpSqstNxpZllQrwjFk.VrO5dg1
+username admin privilege 15 role network-admin secret sha512 $6$XWJ7CnIAVHlh0o/h$haSCMPQ292Qn9MQU/DzF.AJzOKISmW0SkGbad3Jz1ILDOH1be3KsQRspHi0.Km1F2sl745vWOWj.a9XfVrK2H/
 !
 management api http-commands
    protocol https ssl profile eAPI
@@ -115,7 +114,7 @@ interface Management0
    description oob_management
    vrf MGMT
    ip address 172.100.100.102/24
-   ipv6 address 2001:172:100:100::d/80
+   ipv6 address 2001:172:100:100::1a/80
 !
 no ip routing
 no ip routing vrf MGMT
@@ -151,7 +150,7 @@ Image optimization: None
 
 Kernel version: 5.15.0-125-generic
 
-Uptime: 7 minutes
+Uptime: 1 minute
 Total memory: 65425696 kB
-Free memory: 48160704 kB
+Free memory: 48001460 kB
 ```

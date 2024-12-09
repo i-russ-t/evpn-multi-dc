@@ -1,4 +1,4 @@
-! Startup-config last modified at Mon Dec  9 19:00:23 2024 by admin
+! Startup-config last modified at Mon Dec  9 21:08:35 2024 by admin
 ! device: DC2-BORDER-LEAF1 (cEOSLab, EOS-4.32.2.1F-38881786.43221F (engineering build))
 !
 no aaa root

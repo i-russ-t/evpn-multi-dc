@@ -3,7 +3,7 @@
 !
 no aaa root
 !
-username admin privilege 15 role network-admin secret sha512 $6$ZEtRddSZdGPYzzsm$MOIvF7DLPTEoUOBzkJmX.Ob5xmYunUnsXKJ4g0EnDmSRh8mP9uO0RBcTORwrLbOUtfqUyLlFDexse7RI4HaH9/
+username admin privilege 15 role network-admin secret sha512 $6$ojizPA55hvCKIeRQ$suBRzGriRTqyvkDSPBQ1FafaOXBJNgME5YM/dKSukKhgzMKN2aSf7ha6jOh9jk1Udmv8jJvubSFoeHzgoRTia.
 !
 management api http-commands
    protocol https ssl profile eAPI
@@ -49,7 +49,7 @@ interface Management0
    description oob_management
    vrf MGMT
    ip address 172.100.100.104/24
-   ipv6 address 2001:172:100:100::11/80
+   ipv6 address 2001:172:100:100::c/80
 !
 no ip routing
 no ip routing vrf MGMT
