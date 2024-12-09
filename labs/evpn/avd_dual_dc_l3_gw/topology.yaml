@@ -4,7 +4,7 @@ topology:
   kinds:
     ceos:
       startup-config: ../../../ceos_lab_template/ceos.cfg.tpl
-      image: ceosimage:4.32.0F
+      image: ceosimage:4.32.2.1F
       exec:
         - sleep 10
         - FastCli -p 15 -c 'security pki key generate rsa 2048 eAPI.key'
@@ -15,6 +15,8 @@ topology:
     wan:
       kind: ceos
       mgmt-ipv4: 172.100.100.30
+      ports:
+        - 64000:22
     dc1-spine1:
       kind: ceos
       mgmt-ipv4: 172.100.100.11
